@@ -1,0 +1,9 @@
+@import 'src/assets/styles/colors.scss';
+.results {
+    &__container {
+        background-color: $color-gray-1;
+        padding: 0 12rem;
+        min-height: 90vh;
+    }
+
+}

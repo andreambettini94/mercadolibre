@@ -1,0 +1,51 @@
+@import 'src/assets/styles/colors.scss';
+.details {
+    &__container {
+        background-color: $color-gray-1;
+        padding: 0 12rem;
+        min-height: 90vh;
+        .card {
+            cursor: pointer;
+            background-color: $color-white;
+            border-radius: 4px;
+            &--container {
+                display: flex;
+            }
+            &--image {
+                width: 680px;
+                min-height: 400px;
+            }
+            &--details {
+                display: flex;
+                flex-direction: column;
+                width: calc(100% - 680px);
+                padding: 2rem 2rem 0 0;
+                &__status {
+                    font-size: 14px;
+                    margin-bottom: 1rem;
+                }
+                &__title {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                &__price {
+                    font-size: 46px;
+                    margin: 2rem 0;
+                }
+            }
+            &--container-description {
+                padding-top: 0.2rem;
+                padding-left: 2rem;
+                .description {
+                    &--text {
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                    &--details {
+                        padding: 2rem 0;
+                    }
+                }
+            }
+        }
+    }
+}

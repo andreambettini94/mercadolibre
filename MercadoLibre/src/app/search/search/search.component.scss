@@ -1,0 +1,36 @@
+@import 'src/assets/styles/colors.scss';
+.nav {
+    background-color: $color-yellow;
+    height: 4rem;
+    &__container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        &--logo {
+            height: 2rem;
+            width: 4rem;
+        }
+        .input-group {
+            width: 70%;
+            margin-left: 1rem;
+            height: 2.5rem;
+            .form-control {
+                border: 0;
+                font-size: 18px;
+            }
+            &-text {
+                width: 2.5rem;
+                height: 2.5rem;
+                border: 0;
+                background-color: $color-gray-1;
+                cursor: pointer;
+            }
+            &--search {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+    }
+}

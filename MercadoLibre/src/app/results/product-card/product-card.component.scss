@@ -1,0 +1,41 @@
+@import 'src/assets/styles/colors.scss';
+
+.card {
+    cursor: pointer;
+    background-color: $color-white;
+    height: 212px;
+    padding: 1rem;
+    border-bottom: 0.5px solid $color-gray-1;
+    border-radius: 4px;
+    &--container {
+        display: flex;
+    }
+    &--image {
+        width: 180px;
+        height: 180px;
+        margin-right: 1rem;
+        border-radius: 4px;
+    }
+    &--details {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+        &__price {
+            font-size: 1.5rem;
+        }
+        &__free-shiping {
+            width: 1rem;
+            margin: 0.2rem 0.2rem 0.5rem 0.2rem;
+            height: 1rem;
+        }
+        &__container {
+            margin-top: 2rem;
+            &--description {
+                font-size: 18px;
+            }
+        }
+        &__ubication {
+            font-size: 12px;
+        }
+    }
+}
