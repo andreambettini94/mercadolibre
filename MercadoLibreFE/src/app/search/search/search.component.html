@@ -1,0 +1,14 @@
+<nav class="nav">
+    <div class="nav__container">
+        <img class="nav__container--logo" src="../../../assets/imgs/Logo_ML@2x.png.png">
+        <form class="input-group" [formGroup]="searchForm">
+            <input type="text" class="form-control" formControlName="searchValue"
+             placeholder="Nunca dejes de buscar" aria-label="searchValue" aria-describedby="search">
+            <div class="input-group-append">
+            <button class=" button input-group-text" id="search" (click)="search()" [disabled]="searchForm.invalid">
+                <img class="input-group--search" src="../../../assets/imgs/ic_Search@2x.png.png">
+            </button>
+            </div>
+        </form>
+    </div>
+</nav>

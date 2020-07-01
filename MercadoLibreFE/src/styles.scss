@@ -18,6 +18,10 @@ li+li {
 }
 
 .button {
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
     &--principal {
         border-color: transparent;
         background-color: $color-blue;

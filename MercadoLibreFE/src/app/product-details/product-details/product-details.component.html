@@ -1,0 +1,19 @@
+<div class="details__container">
+    <app-categories class="hola"></app-categories>
+    <div class="card">
+        <div class="card--container">
+            <img [src]="product?.picture" class="card--image">
+            <div class="card--details">
+                <p class="card--details__status">{{product?.condition}} - {{product?.sold_quantity}} vendidos</p>
+                <p class="card--details__title">{{product?.title}}</p>
+                <p class="card--details__price">${{product?.price?.amount}}</p>
+                <button class="button--principal">Comprar</button>
+            </div>
+        </div>
+        <div class="card--container-description">
+            <p class="description--text">Descripcion del producto</p>
+            <p class="description--details"> {{product?.description}} </p>
+        </div>
+    
+    </div>
+</div>

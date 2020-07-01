@@ -1,0 +1,20 @@
+<div class="card" (click)="goToDetails(product?.id)">
+    <div class="card--container">
+        <img [src]="product?.picture" class="card--image">
+        <div class="card--details">
+            <div class="d-flex align-items-center">
+                <div class="card--details__price">
+                    ${{product?.price?.amount}}
+                    <img *ngIf="product?.free_shipping" class="card--details__free-shiping" src="../../../assets/imgs/ic_shipping@2x.png.png">
+                </div>
+            </div>
+            <div class="card--details__container">
+                <p class="card--details__container--description">{{product?.title}}</p>
+            </div>
+        </div>
+        <div class="p-3">
+            <p class="card--details__ubication">{{product?.address}}</p>
+        </div>
+    </div>
+
+</div>
